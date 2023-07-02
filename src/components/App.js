@@ -17,8 +17,8 @@ const App = ()=> {
 function Modal({showprop}) {
     
     return (
-        <div className="model-overlay" onClick={()=>showprop(false)}>
-            <button className="model-close" onClick={()=>showprop(false)}>Close</button>
+        <div className="modal-overlay" onClick={()=>showprop(false)}>
+            <button className="modal-close" onClick={()=>showprop(false)}>Close</button>
             <p>This is the content of the modal.</p>
         </div>
     )
