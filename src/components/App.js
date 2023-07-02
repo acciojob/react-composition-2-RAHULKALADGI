@@ -6,14 +6,13 @@ const App = ()=> {
     let [showprop , setShowprop] = useState(false);
     return (
         <div>
-            <div className="model-overlay">
-                <button onClick={()=>setShowprop(true)}>Show Modal</button>
-            { showprop && (<div className="model-close" onClick={()=>setShowprop(false)}>
-                <button onClick={()=>setShowprop(false)}>Close</button>
-                <p>This is the content of modal.</p>
+            <button onClick={()=>setShowprop(true)}>Show Modal</button>
+            {
+            showprop && (<div className="model-overlay" onClick={()=>setShowprop(false)}>
+                <button className="model-close" onClick={()=>setShowprop(false)}>Close</button>
+                <p>This is the content of the modal.</p>
             </div>)
-            }   
-            </div>
+            }
         </div>
     )
 }
