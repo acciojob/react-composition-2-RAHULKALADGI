@@ -8,7 +8,7 @@ const App = ()=> {
         <div>
             <div className="model-overlay">
                 <button onClick={()=>setShowprop(true)}>Show Modal</button>
-            { showprop && (<div className="model-close">
+            { showprop && (<div className="model-close" onClick={()=>setShowprop(false)}>
                 <button onClick={()=>setShowprop(false)}>Close</button>
                 <p>This is the content of modal.</p>
             </div>)
